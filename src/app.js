@@ -1,5 +1,5 @@
 import express from "express";
-import time from "./src/time.js";
+import { horaActual, fechaActual } from "./time.js";
 
 const app = express();
 
@@ -10,11 +10,11 @@ app.get('/', function (req, res) {
 });
 
 app.get('/hora', function (req, res) {
-	res.send(time.horaActual());
+	res.send(horaActual());
 });
 
 app.get('/fecha-completa', function (req, res) {
-	res.send(time.fechaActual());
+	res.send(fechaActual());
 });
 
 app.use(function (req, res, next) {
