@@ -6,7 +6,7 @@ const port = 3000;
 app.use(express.json());
 
 app.use(function (req, res, next) {
-    res.status(404).sendFile(process.cwd() + '/src/img/404.jpg');
+    res.status(404).send("La ruta especificada no existe.");
 })
 
 app.listen(port, () => {
