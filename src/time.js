@@ -1,0 +1,1 @@
+const time = () => Date = new Date().toLocaleTimeString;
