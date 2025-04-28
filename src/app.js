@@ -11,3 +11,5 @@ app.get('/hora', function(req, res) {
 app.get('/fecha-completa', function(req, res) {
 	res.send(time.fechaActual());
 });
+
+export default app;
