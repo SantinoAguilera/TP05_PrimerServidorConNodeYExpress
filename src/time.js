@@ -1,3 +1,5 @@
-const time = () => Date = new Date().toLocaleTimeString;
+const horaActual = () => Date = new Date().toLocaleTimeString;
 
-module.exports = time;
+const fechaActual = () => Date = new Date().toLocaleDateString;
+
+module.exports = horaActual, fechaActual;
